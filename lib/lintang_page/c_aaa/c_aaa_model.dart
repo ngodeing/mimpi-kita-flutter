@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'scholarship_widget.dart' show ScholarshipWidget;
+import 'c_aaa_widget.dart' show CAaaWidget;
 import 'package:flutter/material.dart';
 
-class ScholarshipModel extends FlutterFlowModel<ScholarshipWidget> {
+class CAaaModel extends FlutterFlowModel<CAaaWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

@@ -2,25 +2,25 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'scholarship_model.dart';
-export 'scholarship_model.dart';
+import 'a_scholarship_model.dart';
+export 'a_scholarship_model.dart';
 
-class ScholarshipWidget extends StatefulWidget {
-  const ScholarshipWidget({super.key});
+class AScholarshipWidget extends StatefulWidget {
+  const AScholarshipWidget({super.key});
 
   @override
-  State<ScholarshipWidget> createState() => _ScholarshipWidgetState();
+  State<AScholarshipWidget> createState() => _AScholarshipWidgetState();
 }
 
-class _ScholarshipWidgetState extends State<ScholarshipWidget> {
-  late ScholarshipModel _model;
+class _AScholarshipWidgetState extends State<AScholarshipWidget> {
+  late AScholarshipModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ScholarshipModel());
+    _model = createModel(context, () => AScholarshipModel());
   }
 
   @override
@@ -60,6 +60,38 @@ class _ScholarshipWidgetState extends State<ScholarshipWidget> {
           top: true,
           child: Stack(
             children: [
+              Align(
+                alignment: const AlignmentDirectional(-0.03, 0.58),
+                child: Padding(
+                  padding: const EdgeInsets.all(2.0),
+                  child: FFButtonWidget(
+                    onPressed: () {
+                      print('Button pressed ...');
+                    },
+                    text: 'Daftar Sekarang',
+                    options: FFButtonOptions(
+                      width: 300.0,
+                      height: 31.0,
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding: const EdgeInsets.all(0.0),
+                      color: const Color(0xFFFEBC12),
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Readex Pro',
+                                color: Colors.white,
+                                letterSpacing: 0.0,
+                              ),
+                      elevation: 3.0,
+                      borderSide: const BorderSide(
+                        color: Colors.transparent,
+                        width: 6.0,
+                      ),
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                  ),
+                ),
+              ),
               Align(
                 alignment: const AlignmentDirectional(0.06, -0.85),
                 child: ClipRRect(
@@ -159,38 +191,6 @@ class _ScholarshipWidgetState extends State<ScholarshipWidget> {
                           fontSize: 12.0,
                           letterSpacing: 0.0,
                         ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: const AlignmentDirectional(-0.03, 0.58),
-                child: Padding(
-                  padding: const EdgeInsets.all(2.0),
-                  child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
-                    },
-                    text: 'Daftar Sekarang',
-                    options: FFButtonOptions(
-                      width: 300.0,
-                      height: 31.0,
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                      iconPadding: const EdgeInsets.all(0.0),
-                      color: const Color(0xFFFEBC12),
-                      textStyle:
-                          FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
-                                color: Colors.white,
-                                letterSpacing: 0.0,
-                              ),
-                      elevation: 3.0,
-                      borderSide: const BorderSide(
-                        color: Colors.transparent,
-                        width: 6.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
                   ),
                 ),
               ),

@@ -84,9 +84,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const BOnBoardingWidget(),
         ),
         FFRoute(
-          name: 'scholarship',
-          path: '/scholarship',
-          builder: (context, params) => const ScholarshipWidget(),
+          name: 'a_scholarship',
+          path: '/aScholarship',
+          builder: (context, params) => const AScholarshipWidget(),
         ),
         FFRoute(
           name: 'f_homeDonation',
@@ -106,6 +106,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DonationPage',
           path: '/donationPage',
           builder: (context, params) => const DonationPageWidget(),
+        ),
+        FFRoute(
+          name: 'c_campaigns_Details2',
+          path: '/cCampaignsDetails2',
+          builder: (context, params) => const CCampaignsDetails2Widget(),
+        ),
+        FFRoute(
+          name: 'c_aaa',
+          path: '/cAaa',
+          builder: (context, params) => const CAaaWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
