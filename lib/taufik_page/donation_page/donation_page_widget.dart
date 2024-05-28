@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'donation_page_model.dart';
@@ -179,6 +180,107 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                       border: Border.all(
                         color: const Color(0xFF818898),
                         width: 1.0,
+                      ),
+                    ),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(30.0),
+                            child: Image.asset(
+                              'assets/images/Screenshot_2024-05-28_155356.png',
+                              width: 60.0,
+                              height: 60.0,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              width: 200.0,
+                              height: 100.0,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
+                              ),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Align(
+                                    alignment: const AlignmentDirectional(-1.0, -1.0),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 25.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Fikri Abigail',
+                                        textAlign: TextAlign.start,
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              fontSize: 16.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          20.0, 5.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Mahasiswa',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: const Color(0xFF676767),
+                                              letterSpacing: 0.0,
+                                            ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Align(
+                    alignment: const AlignmentDirectional(0.0, 1.0),
+                    child: FFButtonWidget(
+                      onPressed: () {
+                        print('Button pressed ...');
+                      },
+                      text: 'Donasi Sekarang',
+                      options: FFButtonOptions(
+                        width: double.infinity,
+                        height: 40.0,
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFFFEBC12),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Readex Pro',
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                ),
+                        elevation: 3.0,
+                        borderSide: const BorderSide(
+                          color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
                   ),
