@@ -12,4 +12,3 @@ export '/finka_page/g_home_scholarship/g_home_scholarship_widget.dart'
     show GHomeScholarshipWidget;
 export '/taufik_page/donation_page/donation_page_widget.dart'
     show DonationPageWidget;
-export '/finka_page/kokkok/kokkok_widget.dart' show KokkokWidget;

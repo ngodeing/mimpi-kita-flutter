@@ -106,11 +106,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DonationPage',
           path: '/donationPage',
           builder: (context, params) => const DonationPageWidget(),
-        ),
-        FFRoute(
-          name: 'kokkok',
-          path: '/kokkok',
-          builder: (context, params) => const KokkokWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
