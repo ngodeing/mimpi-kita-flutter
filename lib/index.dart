@@ -15,3 +15,7 @@ export '/taufik_page/donation_page/donation_page_widget.dart'
 export '/lintang_page/c_campaigns_details2/c_campaigns_details2_widget.dart'
     show CCampaignsDetails2Widget;
 export '/lintang_page/c_aaa/c_aaa_widget.dart' show CAaaWidget;
+export '/taufik_page/donation_now/donation_now_widget.dart'
+    show DonationNowWidget;
+export '/taufik_page/donation_success/donation_success_widget.dart'
+    show DonationSuccessWidget;

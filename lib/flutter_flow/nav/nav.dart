@@ -116,6 +116,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'c_aaa',
           path: '/cAaa',
           builder: (context, params) => const CAaaWidget(),
+        ),
+        FFRoute(
+          name: 'DonationNow',
+          path: '/donationNow',
+          builder: (context, params) => const DonationNowWidget(),
+        ),
+        FFRoute(
+          name: 'DonationSuccess',
+          path: '/donationSuccess',
+          builder: (context, params) => const DonationSuccessWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

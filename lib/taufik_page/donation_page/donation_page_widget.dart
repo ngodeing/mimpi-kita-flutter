@@ -53,7 +53,7 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
             child: Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 60.0, 0.0),
               child: Text(
-                'Detail',
+                'Donasi',
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
