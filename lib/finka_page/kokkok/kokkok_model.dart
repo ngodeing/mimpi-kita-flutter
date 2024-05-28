@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'donationbalance_widget.dart' show DonationbalanceWidget;
+import 'kokkok_widget.dart' show KokkokWidget;
 import 'package:flutter/material.dart';
 
-class DonationbalanceModel extends FlutterFlowModel<DonationbalanceWidget> {
+class KokkokModel extends FlutterFlowModel<KokkokWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

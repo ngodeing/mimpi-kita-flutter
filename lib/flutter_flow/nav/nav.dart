@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
+import '/main.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
 export 'package:go_router/go_router.dart';
@@ -88,19 +89,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const ScholarshipWidget(),
         ),
         FFRoute(
-          name: 'donationbalance',
-          path: '/donationbalance',
-          builder: (context, params) => const DonationbalanceWidget(),
-        ),
-        FFRoute(
           name: 'f_homeDonation',
           path: '/fHomeDonation',
-          builder: (context, params) => const FHomeDonationWidget(),
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'f_homeDonation')
+              : const FHomeDonationWidget(),
         ),
         FFRoute(
-          name: 'g_homeBalance',
-          path: '/gHomeBalance',
-          builder: (context, params) => const GHomeBalanceWidget(),
+          name: 'g_homeScholarship',
+          path: '/gHomeScholarship',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'g_homeScholarship')
+              : const GHomeScholarshipWidget(),
+        ),
+        FFRoute(
+          name: 'DonationPage',
+          path: '/donationPage',
+          builder: (context, params) => const DonationPageWidget(),
+        ),
+        FFRoute(
+          name: 'kokkok',
+          path: '/kokkok',
+          builder: (context, params) => const KokkokWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -39,7 +39,7 @@ class _ScholarshipWidgetState extends State<ScholarshipWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primary,
+          backgroundColor: const Color(0xFFFEC739),
           automaticallyImplyLeading: false,
           title: Text(
             'Page Title',

@@ -6,9 +6,10 @@ export '/finka_page/b_on_boarding/b_on_boarding_widget.dart'
     show BOnBoardingWidget;
 export '/lintang_page/scholarship/scholarship_widget.dart'
     show ScholarshipWidget;
-export '/lintang_page/donationbalance/donationbalance_widget.dart'
-    show DonationbalanceWidget;
 export '/finka_page/f_home_donation/f_home_donation_widget.dart'
     show FHomeDonationWidget;
-export '/finka_page/g_home_balance/g_home_balance_widget.dart'
-    show GHomeBalanceWidget;
+export '/finka_page/g_home_scholarship/g_home_scholarship_widget.dart'
+    show GHomeScholarshipWidget;
+export '/taufik_page/donation_page/donation_page_widget.dart'
+    show DonationPageWidget;
+export '/finka_page/kokkok/kokkok_widget.dart' show KokkokWidget;

@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'g_home_balance_widget.dart' show GHomeBalanceWidget;
+import 'g_home_scholarship_widget.dart' show GHomeScholarshipWidget;
 import 'package:flutter/material.dart';
 
-class GHomeBalanceModel extends FlutterFlowModel<GHomeBalanceWidget> {
+class GHomeScholarshipModel extends FlutterFlowModel<GHomeScholarshipWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

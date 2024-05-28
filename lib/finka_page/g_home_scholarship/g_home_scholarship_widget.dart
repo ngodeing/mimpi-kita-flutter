@@ -2,25 +2,25 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'g_home_balance_model.dart';
-export 'g_home_balance_model.dart';
+import 'g_home_scholarship_model.dart';
+export 'g_home_scholarship_model.dart';
 
-class GHomeBalanceWidget extends StatefulWidget {
-  const GHomeBalanceWidget({super.key});
+class GHomeScholarshipWidget extends StatefulWidget {
+  const GHomeScholarshipWidget({super.key});
 
   @override
-  State<GHomeBalanceWidget> createState() => _GHomeBalanceWidgetState();
+  State<GHomeScholarshipWidget> createState() => _GHomeScholarshipWidgetState();
 }
 
-class _GHomeBalanceWidgetState extends State<GHomeBalanceWidget> {
-  late GHomeBalanceModel _model;
+class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
+  late GHomeScholarshipModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => GHomeBalanceModel());
+    _model = createModel(context, () => GHomeScholarshipModel());
 
     _model.searchBarTextController ??= TextEditingController();
     _model.searchBarFocusNode ??= FocusNode();
