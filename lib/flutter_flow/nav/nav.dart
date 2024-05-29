@@ -113,9 +113,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const CCampaignsDetails2Widget(),
         ),
         FFRoute(
-          name: 'c_aaa',
-          path: '/cAaa',
-          builder: (context, params) => const CAaaWidget(),
+          name: 'b_campaigns_details1',
+          path: '/bCampaignsDetails1',
+          builder: (context, params) => const BCampaignsDetails1Widget(),
         ),
         FFRoute(
           name: 'DonationNow',
@@ -126,6 +126,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DonationSuccess',
           path: '/donationSuccess',
           builder: (context, params) => const DonationSuccessWidget(),
+        ),
+        FFRoute(
+          name: 'caridonasi',
+          path: '/caridonasi',
+          builder: (context, params) => const CaridonasiWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

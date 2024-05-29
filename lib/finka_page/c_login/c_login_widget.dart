@@ -161,7 +161,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                         alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              79.0, 32.0, 0.0, 0.0),
+                              75.0, 32.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
@@ -390,8 +390,8 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('f_homeDonation');
                     },
                     text: 'Masuk ',
                     options: FFButtonOptions(

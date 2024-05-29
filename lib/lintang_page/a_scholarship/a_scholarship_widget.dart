@@ -122,9 +122,9 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                   height: 64.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
-                    borderRadius: BorderRadius.circular(4.0),
+                    borderRadius: BorderRadius.circular(12.0),
                     border: Border.all(
-                      color: FlutterFlowTheme.of(context).secondaryText,
+                      color: const Color(0xFFB5B5B5),
                     ),
                   ),
                   child: Align(

@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'c_aaa_widget.dart' show CAaaWidget;
+import 'caridonasi_widget.dart' show CaridonasiWidget;
 import 'package:flutter/material.dart';
 
-class CAaaModel extends FlutterFlowModel<CAaaWidget> {
+class CaridonasiModel extends FlutterFlowModel<CaridonasiWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
