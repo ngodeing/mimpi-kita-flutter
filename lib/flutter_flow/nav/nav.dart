@@ -146,6 +146,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'e_tambah_beasiswa',
           path: '/eTambahBeasiswa',
           builder: (context, params) => const ETambahBeasiswaWidget(),
+        ),
+        FFRoute(
+          name: 'f_profile',
+          path: '/fProfile',
+          builder: (context, params) => const FProfileWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

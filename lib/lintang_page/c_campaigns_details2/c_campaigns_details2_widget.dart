@@ -781,7 +781,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   },
                                   text: 'Kirim',
                                   options: FFButtonOptions(
-                                    width: 300.0,
+                                    width: 371.0,
                                     height: 31.0,
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 0.0, 24.0, 0.0),

@@ -21,8 +21,8 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
     super.initState();
     _model = createModel(context, () => CaridonasiModel());
 
-    _model.textController ??= TextEditingController();
-    _model.textFieldFocusNode ??= FocusNode();
+    _model.searchBarTextController ??= TextEditingController();
+    _model.searchBarFocusNode ??= FocusNode();
   }
 
   @override
@@ -48,110 +48,101 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
-                Container(
-                  width: 395.0,
-                  height: 100.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                  ),
-                  child: SizedBox(
-                    width: 350.0,
-                    child: Stack(
-                      children: [
-                        Align(
-                          alignment: const AlignmentDirectional(1.0, 0.0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                8.0, 0.0, 15.0, 0.0),
-                            child: SizedBox(
-                              width: 320.0,
-                              child: TextFormField(
-                                controller: _model.textController,
-                                focusNode: _model.textFieldFocusNode,
-                                autofocus: true,
-                                obscureText: false,
-                                decoration: InputDecoration(
-                                  labelText: 'Cari Donasi',
-                                  labelStyle: FlutterFlowTheme.of(context)
-                                      .labelMedium
-                                      .override(
-                                        fontFamily: 'Readex Pro',
-                                        letterSpacing: 0.0,
-                                      ),
-                                  hintStyle: FlutterFlowTheme.of(context)
-                                      .labelMedium
-                                      .override(
-                                        fontFamily: 'Readex Pro',
-                                        letterSpacing: 0.0,
-                                      ),
-                                  enabledBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: FlutterFlowTheme.of(context)
-                                          .alternate,
-                                      width: 2.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      width: 2.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                  errorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: FlutterFlowTheme.of(context).error,
-                                      width: 2.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                  focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
-                                      color: FlutterFlowTheme.of(context).error,
-                                      width: 2.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                  filled: true,
-                                  fillColor: const Color(0xC3F8F4F4),
-                                  prefixIcon: const Icon(
-                                    Icons.search,
-                                  ),
-                                ),
-                                style: const TextStyle(),
-                                validator: _model.textControllerValidator
-                                    .asValidator(context),
-                              ),
-                            ),
-                          ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/arrow-narrow-left.png',
+                          width: 20.0,
+                          fit: BoxFit.cover,
                         ),
-                        Align(
-                          alignment: const AlignmentDirectional(-1.0, -1.0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 40.0, 0.0, 0.0),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.asset(
-                                'assets/images/arrow-narrow-left.png',
-                                width: 20.0,
-                                fit: BoxFit.cover,
-                                alignment: const Alignment(-1.0, -1.0),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
-                  ),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            16.0, 0.0, 15.0, 0.0),
+                        child: SizedBox(
+                          width: 20.0,
+                          child: TextFormField(
+                            controller: _model.searchBarTextController,
+                            focusNode: _model.searchBarFocusNode,
+                            autofocus: true,
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              isDense: true,
+                              labelText: 'Bantu',
+                              labelStyle: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: const Color(0xBC57636C),
+                                    letterSpacing: 0.0,
+                                  ),
+                              hintStyle: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Readex Pro',
+                                    letterSpacing: 0.0,
+                                  ),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).alternate,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(22.0),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(22.0),
+                              ),
+                              errorBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).error,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(22.0),
+                              ),
+                              focusedErrorBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).error,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(22.0),
+                              ),
+                              filled: true,
+                              fillColor: Colors.white,
+                              prefixIcon: const Icon(
+                                Icons.search,
+                              ),
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Readex Pro',
+                                  letterSpacing: 0.0,
+                                ),
+                            validator: _model.searchBarTextControllerValidator
+                                .asValidator(context),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 Align(
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(40.0, 12.0, 0.0, 0.0),
                     child: Text(
                       'Pencarian Populer',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -166,7 +157,7 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 10.0, 0.0, 5.0),
+                        const EdgeInsetsDirectional.fromSTEB(40.0, 10.0, 0.0, 2.0),
                     child: Text(
                       'Donasi UKT',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -180,7 +171,7 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 5.0),
+                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 2.0),
                     child: Text(
                       'Pendanaan Proposal',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -194,7 +185,7 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 5.0),
+                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 2.0),
                     child: Text(
                       'Keringanan SPI',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(

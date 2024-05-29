@@ -199,7 +199,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 15.0),
                               child: Text(
-                                'Nama Lengkap Sesuai KTP',
+                                'Nama Instansi',
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
@@ -667,7 +667,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 0.0, 15.0),
                             child: Text(
-                              'Email Donatur',
+                              'Email Penyelenggara',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -937,7 +937,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                           },
                           text: 'Tambah Beasiswa',
                           options: FFButtonOptions(
-                            width: 300.0,
+                            width: 370.0,
                             height: 31.0,
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
