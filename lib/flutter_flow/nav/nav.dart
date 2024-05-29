@@ -131,6 +131,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'caridonasi',
           path: '/caridonasi',
           builder: (context, params) => const CaridonasiWidget(),
+        ),
+        FFRoute(
+          name: 'd_tambah_donasi',
+          path: '/dTambahDonasi',
+          builder: (context, params) => const DTambahDonasiWidget(),
+        ),
+        FFRoute(
+          name: 'caribantu',
+          path: '/caribantu',
+          builder: (context, params) => const CaribantuWidget(),
+        ),
+        FFRoute(
+          name: 'e_tambah_beasiswa',
+          path: '/eTambahBeasiswa',
+          builder: (context, params) => const ETambahBeasiswaWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

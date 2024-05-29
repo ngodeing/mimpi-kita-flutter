@@ -21,3 +21,8 @@ export '/taufik_page/donation_now/donation_now_widget.dart'
 export '/taufik_page/donation_success/donation_success_widget.dart'
     show DonationSuccessWidget;
 export '/ela_page/caridonasi/caridonasi_widget.dart' show CaridonasiWidget;
+export '/lintang_page/d_tambah_donasi/d_tambah_donasi_widget.dart'
+    show DTambahDonasiWidget;
+export '/ela_page/caribantu/caribantu_widget.dart' show CaribantuWidget;
+export '/lintang_page/e_tambah_beasiswa/e_tambah_beasiswa_widget.dart'
+    show ETambahBeasiswaWidget;
