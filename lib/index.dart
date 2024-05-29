@@ -27,3 +27,5 @@ export '/ela_page/caribantu/caribantu_widget.dart' show CaribantuWidget;
 export '/lintang_page/e_tambah_beasiswa/e_tambah_beasiswa_widget.dart'
     show ETambahBeasiswaWidget;
 export '/lintang_page/f_profile/f_profile_widget.dart' show FProfileWidget;
+export '/lintang_page/g_edit_profile/g_edit_profile_widget.dart'
+    show GEditProfileWidget;
