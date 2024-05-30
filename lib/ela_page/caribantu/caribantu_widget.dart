@@ -166,115 +166,124 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 30.0, 0.0, 0.0),
-                          child: Container(
-                            width: 165.0,
-                            height: 205.0,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: const BorderRadius.only(
-                                bottomLeft: Radius.circular(0.0),
-                                bottomRight: Radius.circular(0.0),
-                                topLeft: Radius.circular(10.0),
-                                topRight: Radius.circular(10.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('DonationPage');
+                            },
+                            child: Container(
+                              width: 165.0,
+                              height: 205.0,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: const BorderRadius.only(
+                                  bottomLeft: Radius.circular(0.0),
+                                  bottomRight: Radius.circular(0.0),
+                                  topLeft: Radius.circular(10.0),
+                                  topRight: Radius.circular(10.0),
+                                ),
+                                border: Border.all(
+                                  color: const Color(0xFFD2D2D2),
+                                ),
                               ),
-                              border: Border.all(
-                                color: const Color(0xFFD2D2D2),
-                              ),
-                            ),
-                            child: Stack(
-                              children: [
-                                Card(
-                                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                                  shape: const RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(0.0),
-                                      bottomRight: Radius.circular(0.0),
-                                      topLeft: Radius.circular(10.0),
-                                      topRight: Radius.circular(10.0),
+                              child: Stack(
+                                children: [
+                                  Card(
+                                    clipBehavior: Clip.antiAliasWithSaveLayer,
+                                    shape: const RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(0.0),
+                                        topLeft: Radius.circular(10.0),
+                                        topRight: Radius.circular(10.0),
+                                      ),
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius: const BorderRadius.only(
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(0.0),
+                                        topLeft: Radius.circular(0.0),
+                                        topRight: Radius.circular(0.0),
+                                      ),
+                                      child: Image.asset(
+                                        'assets/images/pexels-buro-millennial-636760-1438081_1.png',
+                                        width: 180.0,
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
-                                  child: ClipRRect(
-                                    borderRadius: const BorderRadius.only(
-                                      bottomLeft: Radius.circular(0.0),
-                                      bottomRight: Radius.circular(0.0),
-                                      topLeft: Radius.circular(0.0),
-                                      topRight: Radius.circular(0.0),
-                                    ),
-                                    child: Image.asset(
-                                      'assets/images/pexels-buro-millennial-636760-1438081_1.png',
-                                      width: 180.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 25.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Bantubarengan',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: const Color(0xFF3C3C3C),
-                                            fontSize: 9.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: const AlignmentDirectional(-1.0, 0.0),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 80.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Bantu Fikri dalam\nmendanai project kuliah',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.black,
-                                            fontSize: 12.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w600,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: const AlignmentDirectional(0.0, 3.17),
-                                  child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        5.0, 150.0, 0.0, 30.0),
-                                    child: LinearPercentIndicator(
-                                      percent: 0.5,
-                                      width: 137.0,
-                                      lineHeight: 14.0,
-                                      animation: true,
-                                      animateFromLastPercent: true,
-                                      progressColor: const Color(0xFFFEBC12),
-                                      backgroundColor: const Color(0x79E4C79E),
-                                      center: Text(
-                                        '50%',
+                                  Align(
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          5.0, 25.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Bantubarengan',
                                         style: FlutterFlowTheme.of(context)
-                                            .headlineSmall
+                                            .bodyMedium
                                             .override(
-                                              fontFamily: 'Outfit',
-                                              color: Colors.black,
+                                              fontFamily: 'Poppins',
+                                              color: const Color(0xFF3C3C3C),
                                               fontSize: 9.0,
                                               letterSpacing: 0.0,
+                                              fontWeight: FontWeight.normal,
                                             ),
                                       ),
-                                      barRadius: const Radius.circular(10.0),
-                                      padding: EdgeInsets.zero,
                                     ),
                                   ),
-                                ),
-                              ],
+                                  Align(
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          5.0, 80.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Bantu Fikri dalam\nmendanai project kuliah',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.black,
+                                              fontSize: 12.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: const AlignmentDirectional(0.0, 3.17),
+                                    child: Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          5.0, 150.0, 0.0, 30.0),
+                                      child: LinearPercentIndicator(
+                                        percent: 0.5,
+                                        width: 137.0,
+                                        lineHeight: 14.0,
+                                        animation: true,
+                                        animateFromLastPercent: true,
+                                        progressColor: const Color(0xFFFEBC12),
+                                        backgroundColor: const Color(0x79E4C79E),
+                                        center: Text(
+                                          '50%',
+                                          style: FlutterFlowTheme.of(context)
+                                              .headlineSmall
+                                              .override(
+                                                fontFamily: 'Outfit',
+                                                color: Colors.black,
+                                                fontSize: 9.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                        ),
+                                        barRadius: const Radius.circular(10.0),
+                                        padding: EdgeInsets.zero,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

@@ -927,8 +927,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('f_homeDonation');
                           },
                           text: 'Tambah Donasi',
                           options: FFButtonOptions(

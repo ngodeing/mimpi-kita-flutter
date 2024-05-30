@@ -616,7 +616,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                         ),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(0.89, 0.95),
+                        alignment: const AlignmentDirectional(0.9, 0.84),
                         child: FFButtonWidget(
                           onPressed: () async {
                             context.pushNamed('e_tambah_beasiswa');

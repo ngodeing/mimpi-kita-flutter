@@ -637,7 +637,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                       ),
                     ),
                     Align(
-                      alignment: const AlignmentDirectional(0.9, 0.72),
+                      alignment: const AlignmentDirectional(0.91, 0.66),
                       child: FFButtonWidget(
                         onPressed: () async {
                           context.pushNamed('d_tambah_donasi');

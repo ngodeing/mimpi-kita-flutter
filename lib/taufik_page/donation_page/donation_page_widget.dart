@@ -185,7 +185,7 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                     width: double.infinity,
                     height: 100.0,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF1F4F8),
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(20.0),
                       border: Border.all(
                         color: const Color(0xFF818898),
@@ -211,9 +211,8 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                             child: Container(
                               width: 200.0,
                               height: 100.0,
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .primaryBackground,
+                              decoration: const BoxDecoration(
+                                color: Colors.white,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,

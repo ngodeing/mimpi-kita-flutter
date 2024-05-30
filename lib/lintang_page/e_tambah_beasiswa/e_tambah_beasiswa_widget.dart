@@ -927,8 +927,8 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('g_homeScholarship');
                           },
                           text: 'Tambah Beasiswa',
                           options: FFButtonOptions(
