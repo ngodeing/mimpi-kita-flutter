@@ -18,7 +18,7 @@ class ETambahBeasiswaModel extends FlutterFlowModel<ETambahBeasiswaWidget> {
   FocusNode? textFieldFocusNode3;
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
-  DateTime? datePicked;
+  DateTime? selectedDate;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode4;
   TextEditingController? textController4;
