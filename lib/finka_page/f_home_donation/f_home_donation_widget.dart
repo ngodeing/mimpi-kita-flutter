@@ -84,13 +84,20 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                                     ),
                               ),
                             ),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.network(
-                                'https://picsum.photos/seed/885/600',
-                                width: 300.0,
-                                height: 200.0,
-                                fit: BoxFit.cover,
+                            Align(
+                              alignment: const AlignmentDirectional(1.0, 0.0),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    180.0, 0.0, 0.0, 0.0),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.asset(
+                                    'assets/images/search-08.png',
+                                    width: 20.0,
+                                    fit: BoxFit.cover,
+                                    alignment: const Alignment(1.0, 0.0),
+                                  ),
+                                ),
                               ),
                             ),
                           ],
