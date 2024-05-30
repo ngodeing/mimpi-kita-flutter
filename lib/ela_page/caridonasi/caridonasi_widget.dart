@@ -99,7 +99,7 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: const Color(0xFF626262),
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),

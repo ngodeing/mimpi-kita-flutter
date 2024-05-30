@@ -14,15 +14,19 @@ class DTambahDonasiModel extends FlutterFlowModel<DTambahDonasiWidget> {
   FocusNode? textFieldFocusNode2;
   TextEditingController? textController2;
   String? Function(BuildContext, String?)? textController2Validator;
-  DateTime? datePicked;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode3;
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
+  DateTime? datePicked;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode4;
   TextEditingController? textController4;
   String? Function(BuildContext, String?)? textController4Validator;
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode5;
+  TextEditingController? textController5;
+  String? Function(BuildContext, String?)? textController5Validator;
 
   @override
   void initState(BuildContext context) {}
@@ -41,5 +45,8 @@ class DTambahDonasiModel extends FlutterFlowModel<DTambahDonasiWidget> {
 
     textFieldFocusNode4?.dispose();
     textController4?.dispose();
+
+    textFieldFocusNode5?.dispose();
+    textController5?.dispose();
   }
 }

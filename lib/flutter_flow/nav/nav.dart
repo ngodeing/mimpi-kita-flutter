@@ -113,11 +113,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const CCampaignsDetails2Widget(),
         ),
         FFRoute(
-          name: 'b_campaigns_details1',
-          path: '/bCampaignsDetails1',
-          builder: (context, params) => const BCampaignsDetails1Widget(),
-        ),
-        FFRoute(
           name: 'DonationNow',
           path: '/donationNow',
           builder: (context, params) => const DonationNowWidget(),

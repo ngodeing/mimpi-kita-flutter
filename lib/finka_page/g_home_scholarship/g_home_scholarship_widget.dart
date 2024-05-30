@@ -120,6 +120,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Poppins',
+                                      color: Colors.black,
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
@@ -249,8 +250,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Poppins',
-                                                        color:
-                                                            const Color(0xFF3C3C3C),
+                                                        color: Colors.black,
                                                         fontSize: 10.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -363,7 +363,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Poppins',
-                                                  color: const Color(0xFF3C3C3C),
+                                                  color: Colors.black,
                                                   fontSize: 10.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
@@ -488,7 +488,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Poppins',
-                                                  color: const Color(0xFF3C3C3C),
+                                                  color: Colors.black,
                                                   fontSize: 10.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,
@@ -599,7 +599,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Poppins',
-                                                  color: const Color(0xFF3C3C3C),
+                                                  color: Colors.black,
                                                   fontSize: 10.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.normal,

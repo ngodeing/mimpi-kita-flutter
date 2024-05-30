@@ -14,8 +14,6 @@ export '/taufik_page/donation_page/donation_page_widget.dart'
     show DonationPageWidget;
 export '/lintang_page/c_campaigns_details2/c_campaigns_details2_widget.dart'
     show CCampaignsDetails2Widget;
-export '/lintang_page/b_campaigns_details1/b_campaigns_details1_widget.dart'
-    show BCampaignsDetails1Widget;
 export '/taufik_page/donation_now/donation_now_widget.dart'
     show DonationNowWidget;
 export '/taufik_page/donation_success/donation_success_widget.dart'

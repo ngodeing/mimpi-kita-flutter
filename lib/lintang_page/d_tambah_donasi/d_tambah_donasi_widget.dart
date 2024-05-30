@@ -33,6 +33,9 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
 
     _model.textController4 ??= TextEditingController();
     _model.textFieldFocusNode4 ??= FocusNode();
+
+    _model.textController5 ??= TextEditingController();
+    _model.textFieldFocusNode5 ??= FocusNode();
   }
 
   @override
@@ -223,9 +226,74 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                           ],
                         ),
                       ),
-                      const Row(
+                      Row(
                         mainAxisSize: MainAxisSize.max,
-                        children: [],
+                        children: [
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 8.0, 0.0),
+                              child: TextFormField(
+                                controller: _model.textController1,
+                                focusNode: _model.textFieldFocusNode1,
+                                autofocus: true,
+                                obscureText: false,
+                                decoration: InputDecoration(
+                                  labelStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                  hintStyle: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
+                                  enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                      color: FlutterFlowTheme.of(context)
+                                          .alternate,
+                                      width: 2.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
+                                      width: 2.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  errorBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                      color: FlutterFlowTheme.of(context).error,
+                                      width: 2.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                  focusedErrorBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                      color: FlutterFlowTheme.of(context).error,
+                                      width: 2.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Readex Pro',
+                                      letterSpacing: 0.0,
+                                    ),
+                                validator: _model.textController1Validator
+                                    .asValidator(context),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -254,8 +322,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 0.0),
                               child: TextFormField(
-                                controller: _model.textController1,
-                                focusNode: _model.textFieldFocusNode1,
+                                controller: _model.textController2,
+                                focusNode: _model.textFieldFocusNode2,
                                 autofocus: true,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -263,6 +331,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryText,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
@@ -308,7 +378,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
-                                validator: _model.textController1Validator
+                                validator: _model.textController2Validator
                                     .asValidator(context),
                               ),
                             ),
@@ -346,8 +416,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 0.0),
                               child: TextFormField(
-                                controller: _model.textController2,
-                                focusNode: _model.textFieldFocusNode2,
+                                controller: _model.textController3,
+                                focusNode: _model.textFieldFocusNode3,
                                 autofocus: true,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -403,7 +473,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
-                                validator: _model.textController2Validator
+                                validator: _model.textController3Validator
                                     .asValidator(context),
                               ),
                             ),
@@ -555,8 +625,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 15.0),
                               child: TextFormField(
-                                controller: _model.textController3,
-                                focusNode: _model.textFieldFocusNode3,
+                                controller: _model.textController4,
+                                focusNode: _model.textFieldFocusNode4,
                                 autofocus: true,
                                 obscureText: false,
                                 decoration: InputDecoration(
@@ -611,7 +681,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
-                                validator: _model.textController3Validator
+                                validator: _model.textController4Validator
                                     .asValidator(context),
                               ),
                             ),
@@ -648,8 +718,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 8.0, 0.0),
                                 child: TextFormField(
-                                  controller: _model.textController4,
-                                  focusNode: _model.textFieldFocusNode4,
+                                  controller: _model.textController5,
+                                  focusNode: _model.textFieldFocusNode5,
                                   autofocus: true,
                                   obscureText: false,
                                   decoration: InputDecoration(
@@ -706,7 +776,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                         color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
-                                  validator: _model.textController4Validator
+                                  validator: _model.textController5Validator
                                       .asValidator(context),
                                 ),
                               ),

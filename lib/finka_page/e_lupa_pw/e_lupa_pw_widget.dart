@@ -172,6 +172,7 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
                                           .labelMedium
                                           .override(
                                             fontFamily: 'Poppins',
+                                            color: const Color(0xFF5B6063),
                                             fontSize: 15.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -181,6 +182,7 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
                                           .labelMedium
                                           .override(
                                             fontFamily: 'Poppins',
+                                            color: const Color(0xFF5B6063),
                                             fontSize: 15.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
