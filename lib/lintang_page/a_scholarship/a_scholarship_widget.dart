@@ -100,7 +100,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                     child: Text(
                       'Beasiswa Suka Data',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w800,
@@ -144,7 +144,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                     child: Text(
                       'Suka Data',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.bold,
@@ -156,7 +156,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                     child: Text(
                       'Verified Account',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             fontSize: 12.0,
                             letterSpacing: 0.0,
@@ -166,9 +166,9 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                   Align(
                     alignment: const AlignmentDirectional(-0.64, 0.05),
                     child: Text(
-                      '20 April 2024 - 12 Juni 2024',
+                      '20 Januari 2024 - 20 Maret 2024',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                           ),
@@ -179,11 +179,11 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                     child: Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: Text(
-                        'Beasiswa Suka Data adalah program beasiswa yang \nditujukan untuk mahasiswa berprestasi di bidang analisis \ndata, ilmu data, dan teknologi informasi. Program ini \nbertujuan untuk mendukung perkembangan sumber\n daya manusia yang kompeten di bidang data science,\nyang menjadi semakin penting di era digital saat ini.',
+                        'Beasiswa Suka Data adalah program beasiswa yang \nditujukan untuk mahasiswa berkompeten di bidang analisis \ndata, data mining, dan data scientist. Program ini \nbertujuan untuk mendukung mahasiswa yang dapat\n berkontribusi positif bagi masyarakat dan industri.
                         textAlign: TextAlign.justify,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
-                              color: Colors.black,
+                              fontFamily: 'Poppins',
+                              color: Colors.#57636c,
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                             ),
@@ -210,7 +210,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                       color: const Color(0xFFFEBC12),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Poppins',
                                 color: Colors.white,
                                 letterSpacing: 0.0,
                               ),

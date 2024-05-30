@@ -98,7 +98,7 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Poppins',
                                       color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
@@ -114,11 +114,11 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 12.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(41.0, 12.0, 0.0, 0.0),
                     child: Text(
                       'Pencarian Populer',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: const Color(0xFF5B6062),
                             letterSpacing: 0.0,
                           ),
@@ -129,11 +129,11 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 10.0, 0.0, 2.0),
+                        const EdgeInsetsDirectional.fromSTEB(41.0, 10.0, 0.0, 2.0),
                     child: Text(
                       'Donasi UKT',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                           ),
@@ -144,11 +144,11 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 2.0),
+                        const EdgeInsetsDirectional.fromSTEB(41.0, 0.0, 0.0, 2.0),
                     child: Text(
                       'Pendanaan Proposal',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                           ),
@@ -159,11 +159,11 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 2.0),
+                        const EdgeInsetsDirectional.fromSTEB(41.0, 0.0, 0.0, 2.0),
                     child: Text(
                       'Keringanan SPI',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                           ),
@@ -174,11 +174,11 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 5.0),
+                        const EdgeInsetsDirectional.fromSTEB(41.0, 0.0, 0.0, 5.0),
                     child: Text(
                       'Biaya Hidup Mahasiswa',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                           ),
@@ -189,11 +189,11 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                   alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(40.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(41.0, 0.0, 0.0, 0.0),
                     child: Text(
                       'Pendanaan Prestasi',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Poppins',
                             color: Colors.black,
                             letterSpacing: 0.0,
                           ),
