@@ -123,9 +123,9 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Poppins',
                                     color: Colors.black,
-                                    fontSize: 25.0,
+                                    fontSize: 30.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -311,7 +311,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 15.0, 0.0, 15.0),
+                                20.0, 15.0, 0.0, 20.0),
                             child: Text(
                               'Judul Beasiswa',
                               style: FlutterFlowTheme.of(context)
@@ -490,7 +490,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 15.0, 0.0, 15.0),
+                                20.0, 15.0, 0.0, 20.0),
                             child: Text(
                               'Tenggat Beasiswa',
                               style: FlutterFlowTheme.of(context)
@@ -608,7 +608,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 15.0, 0.0, 15.0),
+                                20.0, 15.0, 0.0, 20.0),
                             child: Text(
                               'Kuota Beasiswa',
                               style: FlutterFlowTheme.of(context)
@@ -695,7 +695,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 0.0, 15.0),
+                                20.0, 0.0, 0.0, 20.0),
                             child: Text(
                               'Email Penyelenggara',
                               style: FlutterFlowTheme.of(context)
