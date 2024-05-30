@@ -179,11 +179,11 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                     child: Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: Text(
-                        'Beasiswa Suka Data adalah program beasiswa yang \nditujukan untuk mahasiswa berkompeten di bidang analisis \ndata, data mining, dan data scientist. Program ini \nbertujuan untuk mendukung mahasiswa yang dapat\n berkontribusi positif bagi masyarakat dan industri.
+                        'Beasiswa Suka Data adalah program beasiswa yang \n ditujukan untuk mahasiswa berkompeten di bidang analisis \ndata, data mining, dan data scientist. Program ini \n bertujuan untuk mendukung mahasiswa yang dapat \n berkontribusi positif bagi masyarakat dan industri.',
                         textAlign: TextAlign.justify,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Poppins',
-                              color: Colors.#57636c,
+                              color: Color(0xFF57636C),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                             ),
