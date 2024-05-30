@@ -327,7 +327,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .headlineSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily: 'Poppins',
                                                         color: Colors.black,
                                                         fontSize: 9.0,
                                                         letterSpacing: 0.0,
@@ -459,7 +459,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .headlineSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily: 'Poppins',
                                                         color: Colors.black,
                                                         fontSize: 9.0,
                                                         letterSpacing: 0.0,
@@ -591,7 +591,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .headlineSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily: 'Poppins',
                                                         fontSize: 9.0,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -653,7 +653,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                           color: const Color(0xFFFEBC12),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Poppins',
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),
