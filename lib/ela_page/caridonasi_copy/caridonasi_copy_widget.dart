@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'caridonasi_copy_model.dart';
 export 'caridonasi_copy_model.dart';
 
@@ -20,6 +21,11 @@ class _CaridonasiCopyWidgetState extends State<CaridonasiCopyWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => CaridonasiCopyModel());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      context.pushNamed('caribeasiswa');
+    });
   }
 
   @override

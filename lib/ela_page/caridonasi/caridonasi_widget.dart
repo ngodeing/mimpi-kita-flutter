@@ -65,26 +65,35 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                       child: Padding(
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(7.0, 0.0, 0.0, 0.0),
-                        child: Container(
-                          width: 320.0,
-                          height: 45.0,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16.0),
-                          ),
-                          alignment: const AlignmentDirectional(-1.0, 0.0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                15.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              'Donasi',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    color: const Color(0xFF626262),
-                                    letterSpacing: 0.0,
-                                  ),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('caribantu');
+                          },
+                          child: Container(
+                            width: 320.0,
+                            height: 45.0,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16.0),
+                            ),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  15.0, 0.0, 0.0, 0.0),
+                              child: Text(
+                                'Donasi',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Readex Pro',
+                                      color: const Color(0xFF626262),
+                                      letterSpacing: 0.0,
+                                    ),
+                              ),
                             ),
                           ),
                         ),

@@ -89,13 +89,22 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                               child: Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     180.0, 0.0, 0.0, 0.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/search-08.png',
-                                    width: 20.0,
-                                    fit: BoxFit.cover,
-                                    alignment: const Alignment(1.0, 0.0),
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed('caribantu');
+                                  },
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/search-08.png',
+                                      width: 20.0,
+                                      fit: BoxFit.cover,
+                                      alignment: const Alignment(1.0, 0.0),
+                                    ),
                                   ),
                                 ),
                               ),
