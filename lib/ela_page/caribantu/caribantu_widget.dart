@@ -41,7 +41,7 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Align(
@@ -133,6 +133,7 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  color: Colors.black,
                                   letterSpacing: 0.0,
                                 ),
                             validator: _model.searchBarTextControllerValidator
@@ -228,7 +229,7 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Poppins',
-                                            color: const Color(0xFF3C3C3C),
+                                            color: Colors.black,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -255,6 +256,7 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Outfit',
+                                              color: Colors.black,
                                               fontSize: 9.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -343,7 +345,7 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Poppins',
-                                            color: const Color(0xFF3C3C3C),
+                                            color: Colors.black,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -370,6 +372,7 @@ class _CaribantuWidgetState extends State<CaribantuWidget> {
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Outfit',
+                                              color: Colors.black,
                                               fontSize: 9.0,
                                               letterSpacing: 0.0,
                                             ),

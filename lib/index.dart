@@ -29,3 +29,7 @@ export '/lintang_page/e_tambah_beasiswa/e_tambah_beasiswa_widget.dart'
 export '/lintang_page/f_profile/f_profile_widget.dart' show FProfileWidget;
 export '/lintang_page/g_edit_profile/g_edit_profile_widget.dart'
     show GEditProfileWidget;
+export '/ela_page/caribeasiswa/caribeasiswa_widget.dart'
+    show CaribeasiswaWidget;
+export '/ela_page/caridonasi_copy/caridonasi_copy_widget.dart'
+    show CaridonasiCopyWidget;

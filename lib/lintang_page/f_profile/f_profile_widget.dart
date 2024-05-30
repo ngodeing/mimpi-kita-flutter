@@ -39,7 +39,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(40.0),
           child: AppBar(
@@ -89,6 +89,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       fontSize: 25.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
@@ -155,6 +156,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -168,6 +170,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -186,6 +189,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -198,6 +202,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -212,47 +217,8 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 25.0),
                             child: FFButtonWidget(
-                              onPressed: () async {
-                                final selectedMedia =
-                                    await selectMediaWithSourceBottomSheet(
-                                  context: context,
-                                  allowPhoto: true,
-                                  backgroundColor: const Color(0xFFFEBC12),
-                                );
-                                if (selectedMedia != null &&
-                                    selectedMedia.every((m) =>
-                                        validateFileFormat(
-                                            m.storagePath, context))) {
-                                  setState(
-                                      () => _model.isDataUploading1 = true);
-                                  var selectedUploadedFiles =
-                                      <FFUploadedFile>[];
-
-                                  try {
-                                    selectedUploadedFiles = selectedMedia
-                                        .map((m) => FFUploadedFile(
-                                              name:
-                                                  m.storagePath.split('/').last,
-                                              bytes: m.bytes,
-                                              height: m.dimensions?.height,
-                                              width: m.dimensions?.width,
-                                              blurHash: m.blurHash,
-                                            ))
-                                        .toList();
-                                  } finally {
-                                    _model.isDataUploading1 = false;
-                                  }
-                                  if (selectedUploadedFiles.length ==
-                                      selectedMedia.length) {
-                                    setState(() {
-                                      _model.uploadedLocalFile1 =
-                                          selectedUploadedFiles.first;
-                                    });
-                                  } else {
-                                    setState(() {});
-                                    return;
-                                  }
-                                }
+                              onPressed: () {
+                                print('Button pressed ...');
                               },
                               text: 'Edit Profile',
                               options: FFButtonOptions(
@@ -288,47 +254,8 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 20.0),
                             child: FFButtonWidget(
-                              onPressed: () async {
-                                final selectedMedia =
-                                    await selectMediaWithSourceBottomSheet(
-                                  context: context,
-                                  allowPhoto: true,
-                                  backgroundColor: const Color(0xFFFEBC12),
-                                );
-                                if (selectedMedia != null &&
-                                    selectedMedia.every((m) =>
-                                        validateFileFormat(
-                                            m.storagePath, context))) {
-                                  setState(
-                                      () => _model.isDataUploading2 = true);
-                                  var selectedUploadedFiles =
-                                      <FFUploadedFile>[];
-
-                                  try {
-                                    selectedUploadedFiles = selectedMedia
-                                        .map((m) => FFUploadedFile(
-                                              name:
-                                                  m.storagePath.split('/').last,
-                                              bytes: m.bytes,
-                                              height: m.dimensions?.height,
-                                              width: m.dimensions?.width,
-                                              blurHash: m.blurHash,
-                                            ))
-                                        .toList();
-                                  } finally {
-                                    _model.isDataUploading2 = false;
-                                  }
-                                  if (selectedUploadedFiles.length ==
-                                      selectedMedia.length) {
-                                    setState(() {
-                                      _model.uploadedLocalFile2 =
-                                          selectedUploadedFiles.first;
-                                    });
-                                  } else {
-                                    setState(() {});
-                                    return;
-                                  }
-                                }
+                              onPressed: () {
+                                print('Button pressed ...');
                               },
                               text: 'Riwayat Donasi',
                               options: FFButtonOptions(
@@ -375,8 +302,7 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                     selectedMedia.every((m) =>
                                         validateFileFormat(
                                             m.storagePath, context))) {
-                                  setState(
-                                      () => _model.isDataUploading3 = true);
+                                  setState(() => _model.isDataUploading = true);
                                   var selectedUploadedFiles =
                                       <FFUploadedFile>[];
 
@@ -392,12 +318,12 @@ class _FProfileWidgetState extends State<FProfileWidget> {
                                             ))
                                         .toList();
                                   } finally {
-                                    _model.isDataUploading3 = false;
+                                    _model.isDataUploading = false;
                                   }
                                   if (selectedUploadedFiles.length ==
                                       selectedMedia.length) {
                                     setState(() {
-                                      _model.uploadedLocalFile3 =
+                                      _model.uploadedLocalFile =
                                           selectedUploadedFiles.first;
                                     });
                                   } else {

@@ -43,14 +43,23 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEBC12),
           automaticallyImplyLeading: false,
-          leading: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-            size: 30.0,
+          leading: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.safePop();
+            },
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 30.0,
+            ),
           ),
           title: Align(
             alignment: const AlignmentDirectional(0.0, 0.0),
@@ -87,6 +96,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
+                          color: Colors.black,
                           fontSize: 24.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
@@ -127,6 +137,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                                   .labelMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: UnderlineInputBorder(
@@ -182,6 +193,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
+                            color: Colors.black,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -193,7 +205,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     child: Row(
@@ -224,10 +236,8 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                                 ),
                             buttonPosition: RadioButtonPosition.left,
                             direction: Axis.vertical,
-                            radioButtonColor:
-                                FlutterFlowTheme.of(context).primary,
-                            inactiveRadioButtonColor:
-                                FlutterFlowTheme.of(context).secondaryText,
+                            radioButtonColor: const Color(0xFFFEBC12),
+                            inactiveRadioButtonColor: Colors.black,
                             toggleable: false,
                             horizontalAlignment: WrapAlignment.start,
                             verticalAlignment: WrapCrossAlignment.start,
@@ -241,8 +251,8 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 1.0),
                     child: FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        context.pushNamed('DonationSuccess');
                       },
                       text: 'Bayar',
                       options: FFButtonOptions(

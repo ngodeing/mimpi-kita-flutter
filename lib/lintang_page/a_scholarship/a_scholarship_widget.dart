@@ -38,7 +38,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEC739),
           automaticallyImplyLeading: false,
@@ -47,9 +47,10 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
             textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 22.0,
                   letterSpacing: 0.0,
+                  fontWeight: FontWeight.w600,
                 ),
           ),
           actions: const [],
@@ -65,8 +66,8 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                 child: Padding(
                   padding: const EdgeInsets.all(2.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('b_campaigns_details1');
                     },
                     text: 'Daftar Sekarang',
                     options: FFButtonOptions(
@@ -110,6 +111,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                   'Beasiswa Suka Data',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
+                        color: Colors.black,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.w800,
                       ),
@@ -153,6 +155,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                   'Suka Data',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
+                        color: Colors.black,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -164,6 +167,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                   'Verified Account',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
+                        color: Colors.black,
                         fontSize: 12.0,
                         letterSpacing: 0.0,
                       ),
@@ -175,6 +179,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                   '20 April 2024 - 12 Juni 2024',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
+                        color: Colors.black,
                         letterSpacing: 0.0,
                       ),
                 ),
@@ -188,6 +193,7 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
                     textAlign: TextAlign.justify,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
+                          color: Colors.black,
                           fontSize: 12.0,
                           letterSpacing: 0.0,
                         ),

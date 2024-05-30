@@ -56,7 +56,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(30.0),
           child: AppBar(
@@ -71,7 +71,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Outfit',
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 22.0,
                         letterSpacing: 0.0,
                       ),
@@ -103,6 +103,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     fontSize: 25.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -126,6 +127,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -143,8 +145,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                               width: 157.0,
                               height: 65.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .primaryBackground,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(6.0),
                                 border: Border.all(
                                   color: const Color(0xFFB5B5B5),
@@ -206,6 +207,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -230,6 +232,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),
                                   alignLabelWithHint: false,
@@ -237,6 +240,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -273,6 +277,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController1Validator
@@ -294,6 +299,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -317,12 +323,14 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.white,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -359,6 +367,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController2Validator
@@ -383,6 +392,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -407,12 +417,14 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -449,6 +461,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController3Validator
@@ -470,6 +483,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -494,6 +508,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                               hintText: 'Please select...',
@@ -529,6 +544,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -553,12 +569,14 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -595,6 +613,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController4Validator
@@ -616,6 +635,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -645,6 +665,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -681,6 +702,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController5Validator
@@ -702,6 +724,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -722,7 +745,7 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                     .primaryBackground,
                                 borderRadius: BorderRadius.circular(6.0),
                                 border: Border.all(
-                                  color: const Color(0xFFB5B5B5),
+                                  color: Colors.white,
                                   width: 1.0,
                                 ),
                               ),
@@ -776,8 +799,8 @@ class _CCampaignsDetails2WidgetState extends State<CCampaignsDetails2Widget> {
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 40.0),
                                 child: FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    context.pushNamed('g_homeScholarship');
                                   },
                                   text: 'Kirim',
                                   options: FFButtonOptions(

@@ -1,25 +1,25 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'caridonasi_model.dart';
-export 'caridonasi_model.dart';
+import 'caridonasi_copy_model.dart';
+export 'caridonasi_copy_model.dart';
 
-class CaridonasiWidget extends StatefulWidget {
-  const CaridonasiWidget({super.key});
+class CaridonasiCopyWidget extends StatefulWidget {
+  const CaridonasiCopyWidget({super.key});
 
   @override
-  State<CaridonasiWidget> createState() => _CaridonasiWidgetState();
+  State<CaridonasiCopyWidget> createState() => _CaridonasiCopyWidgetState();
 }
 
-class _CaridonasiWidgetState extends State<CaridonasiWidget> {
-  late CaridonasiModel _model;
+class _CaridonasiCopyWidgetState extends State<CaridonasiCopyWidget> {
+  late CaridonasiCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CaridonasiModel());
+    _model = createModel(context, () => CaridonasiCopyModel());
   }
 
   @override
@@ -60,32 +60,16 @@ class _CaridonasiWidgetState extends State<CaridonasiWidget> {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                    Flexible(
                       child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(7.0, 0.0, 0.0, 0.0),
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            15.0, 0.0, 20.0, 0.0),
                         child: Container(
-                          width: 320.0,
-                          height: 45.0,
+                          width: double.infinity,
+                          height: 40.0,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(16.0),
-                          ),
-                          alignment: const AlignmentDirectional(-1.0, 0.0),
-                          child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                15.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              'Donasi',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Readex Pro',
-                                    color: const Color(0xFF626262),
-                                    letterSpacing: 0.0,
-                                  ),
-                            ),
+                            borderRadius: BorderRadius.circular(24.0),
                           ),
                         ),
                       ),

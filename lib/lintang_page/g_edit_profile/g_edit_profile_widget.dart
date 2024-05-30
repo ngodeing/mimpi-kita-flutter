@@ -55,7 +55,6 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(30.0),
           child: AppBar(
@@ -102,6 +101,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     fontSize: 25.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -125,6 +125,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -205,6 +206,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -293,6 +295,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -382,6 +385,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -469,6 +473,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -496,10 +501,9 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               hintText: 'Please select...',
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.keyboard_arrow_down_rounded,
-                                color:
-                                    FlutterFlowTheme.of(context).secondaryText,
+                                color: Colors.black,
                                 size: 24.0,
                               ),
                               elevation: 2.0,
@@ -528,6 +532,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -615,6 +620,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -701,6 +707,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -753,7 +760,7 @@ class _GEditProfileWidgetState extends State<GEditProfileWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
-                                              color: const Color(0xFFB5B5B5),
+                                              color: const Color(0xFF3C3C3C),
                                               letterSpacing: 0.0,
                                             ),
                                       ),

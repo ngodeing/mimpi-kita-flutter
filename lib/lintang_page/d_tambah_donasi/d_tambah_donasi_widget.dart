@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/upload_data.dart';
 import 'package:flutter/material.dart';
 import 'd_tambah_donasi_model.dart';
 export 'd_tambah_donasi_model.dart';
@@ -54,7 +53,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(30.0),
           child: AppBar(
@@ -69,7 +68,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Outfit',
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 22.0,
                         letterSpacing: 0.0,
                       ),
@@ -101,6 +100,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     fontSize: 25.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -124,6 +124,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -141,8 +142,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                               width: 157.0,
                               height: 65.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .primaryBackground,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.circular(6.0),
                                 border: Border.all(
                                   color: const Color(0xFFB5B5B5),
@@ -204,6 +204,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -228,6 +229,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   alignLabelWithHint: false,
@@ -235,6 +237,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -271,6 +274,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController1Validator
@@ -292,6 +296,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -357,6 +362,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController2Validator
@@ -381,6 +387,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -406,12 +413,14 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -448,6 +457,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController3Validator
@@ -469,6 +479,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -586,6 +597,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -609,12 +621,14 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   enabledBorder: OutlineInputBorder(
@@ -651,6 +665,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model.textController4Validator
@@ -672,6 +687,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -698,12 +714,14 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                         .labelMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
+                                          color: Colors.black,
                                           letterSpacing: 0.0,
                                         ),
                                     hintStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
                                           fontFamily: 'Readex Pro',
+                                          color: Colors.black,
                                           letterSpacing: 0.0,
                                         ),
                                     enabledBorder: OutlineInputBorder(
@@ -742,6 +760,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                   validator: _model.textController5Validator
@@ -767,6 +786,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -781,46 +801,8 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 20.0),
                             child: FFButtonWidget(
-                              onPressed: () async {
-                                final selectedMedia =
-                                    await selectMediaWithSourceBottomSheet(
-                                  context: context,
-                                  allowPhoto: true,
-                                  backgroundColor: const Color(0xFFFEBC12),
-                                );
-                                if (selectedMedia != null &&
-                                    selectedMedia.every((m) =>
-                                        validateFileFormat(
-                                            m.storagePath, context))) {
-                                  setState(() => _model.isDataUploading = true);
-                                  var selectedUploadedFiles =
-                                      <FFUploadedFile>[];
-
-                                  try {
-                                    selectedUploadedFiles = selectedMedia
-                                        .map((m) => FFUploadedFile(
-                                              name:
-                                                  m.storagePath.split('/').last,
-                                              bytes: m.bytes,
-                                              height: m.dimensions?.height,
-                                              width: m.dimensions?.width,
-                                              blurHash: m.blurHash,
-                                            ))
-                                        .toList();
-                                  } finally {
-                                    _model.isDataUploading = false;
-                                  }
-                                  if (selectedUploadedFiles.length ==
-                                      selectedMedia.length) {
-                                    setState(() {
-                                      _model.uploadedLocalFile =
-                                          selectedUploadedFiles.first;
-                                    });
-                                  } else {
-                                    setState(() {});
-                                    return;
-                                  }
-                                }
+                              onPressed: () {
+                                print('Button pressed ...');
                               },
                               text: 'Upload Gambar',
                               options: FFButtonOptions(
@@ -862,8 +844,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                 width: 157.0,
                                 height: 65.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBackground,
+                                  color: Colors.white,
                                   borderRadius: BorderRadius.circular(6.0),
                                   border: Border.all(
                                     color: const Color(0xFFB5B5B5),
@@ -920,6 +901,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                 ),

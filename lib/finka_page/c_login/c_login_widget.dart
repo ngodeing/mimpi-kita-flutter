@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'c_login_model.dart';
 export 'c_login_model.dart';
 
@@ -22,11 +21,6 @@ class _CLoginWidgetState extends State<CLoginWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => CLoginModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.pushNamed('e_LupaPw');
-    });
 
     _model.emailLoginTextController ??= TextEditingController();
     _model.emailLoginFocusNode ??= FocusNode();
@@ -50,7 +44,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xEEFFFFFF),
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Column(
@@ -441,6 +435,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: Colors.black,
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -467,6 +462,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Poppins',
+                                    color: Colors.black,
                                     fontSize: 15.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,

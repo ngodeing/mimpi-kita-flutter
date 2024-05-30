@@ -38,14 +38,23 @@ class _DonationSuccessWidgetState extends State<DonationSuccessWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEBC12),
           automaticallyImplyLeading: false,
-          leading: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-            size: 30.0,
+          leading: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.pushNamed('f_homeDonation');
+            },
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 30.0,
+            ),
           ),
           title: Align(
             alignment: const AlignmentDirectional(0.0, 0.0),
@@ -85,6 +94,7 @@ class _DonationSuccessWidgetState extends State<DonationSuccessWidget> {
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
+                            color: Colors.black,
                             fontSize: 24.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.bold,
@@ -108,8 +118,8 @@ class _DonationSuccessWidgetState extends State<DonationSuccessWidget> {
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 1.0),
                     child: FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
+                      onPressed: () async {
+                        context.pushNamed('f_homeDonation');
                       },
                       text: 'Selesai',
                       options: FFButtonOptions(

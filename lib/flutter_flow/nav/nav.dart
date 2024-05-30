@@ -156,6 +156,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'g_edit_profile',
           path: '/gEditProfile',
           builder: (context, params) => const GEditProfileWidget(),
+        ),
+        FFRoute(
+          name: 'caribeasiswa',
+          path: '/caribeasiswa',
+          builder: (context, params) => const CaribeasiswaWidget(),
+        ),
+        FFRoute(
+          name: 'caridonasiCopy',
+          path: '/caridonasiCopy',
+          builder: (context, params) => const CaridonasiCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

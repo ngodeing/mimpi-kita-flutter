@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/upload_data.dart';
 import 'package:flutter/material.dart';
 import 'e_tambah_beasiswa_model.dart';
 export 'e_tambah_beasiswa_model.dart';
@@ -54,7 +53,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(30.0),
           child: AppBar(
@@ -101,6 +100,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     fontSize: 25.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
@@ -124,6 +124,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -204,6 +205,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -292,6 +294,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -381,6 +384,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -469,6 +473,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -586,6 +591,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -672,6 +678,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -767,6 +774,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
+                                      color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -781,46 +789,8 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 0.0, 20.0),
                             child: FFButtonWidget(
-                              onPressed: () async {
-                                final selectedMedia =
-                                    await selectMediaWithSourceBottomSheet(
-                                  context: context,
-                                  allowPhoto: true,
-                                  backgroundColor: const Color(0xFFFEBC12),
-                                );
-                                if (selectedMedia != null &&
-                                    selectedMedia.every((m) =>
-                                        validateFileFormat(
-                                            m.storagePath, context))) {
-                                  setState(() => _model.isDataUploading = true);
-                                  var selectedUploadedFiles =
-                                      <FFUploadedFile>[];
-
-                                  try {
-                                    selectedUploadedFiles = selectedMedia
-                                        .map((m) => FFUploadedFile(
-                                              name:
-                                                  m.storagePath.split('/').last,
-                                              bytes: m.bytes,
-                                              height: m.dimensions?.height,
-                                              width: m.dimensions?.width,
-                                              blurHash: m.blurHash,
-                                            ))
-                                        .toList();
-                                  } finally {
-                                    _model.isDataUploading = false;
-                                  }
-                                  if (selectedUploadedFiles.length ==
-                                      selectedMedia.length) {
-                                    setState(() {
-                                      _model.uploadedLocalFile =
-                                          selectedUploadedFiles.first;
-                                    });
-                                  } else {
-                                    setState(() {});
-                                    return;
-                                  }
-                                }
+                              onPressed: () {
+                                print('Button pressed ...');
                               },
                               text: 'Upload Gambar',
                               options: FFButtonOptions(
@@ -920,6 +890,7 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
+                                        color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
                                 ),

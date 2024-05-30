@@ -41,7 +41,7 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEBC12),
           automaticallyImplyLeading: false,
@@ -51,7 +51,7 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
               'Beasiswa',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Outfit',
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 22.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.bold,
@@ -82,6 +82,7 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  color: Colors.black,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -92,18 +93,21 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
                     Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              20.0, 10.0, 30.0, 50.0),
-                          child: Text(
-                            'Beasiswa Suka Data adalah program beasiswa yang \nditujukan untuk mahasiswa berprestasi di bidang \nanalisis data, ilmu data, dan teknologi informasi.\nProgram ini bertujuan untuk mendukung perkem-\nbangan sumber daya manusia yang kompeten di \nbidang data science, yang menjadi semakin penting \ndi era digital saat ini.\n\nTujuan Beasiswa\n1. Mendorong minat dan pengembangan keterampilan \ndi bidang ilmu data.\n2. Menyediakan bantuan finansial bagi \nmahasiswa berprestasi yang memiliki keterbatasan \nekonomi.\n3. Membangun jaringan profesional di bidang analisis \ndata melalui program mentorship dan pelatihan.\n\nManfaat Beasiswa\n1. Bantuan biaya kuliah penuh atau sebagian selama \n1 tahun akademik.\n2. Kesempatan mengikuti pelatihan dan workshop \neksklusif di bidang data science.\n3. Akses ke jaringan mentor profesional dan peluang \nmagang di perusahaan mitra.\n4. Sertifikat penghargaan dan kesempatan untuk \nmengikuti proyek penelitian atau pengembangan.\n\nSyarat dan Ketentuan\nPersyaratan Umum\n1. Warga Negara Indonesia.\n2. Terdaftar sebagai mahasiswa aktif di jenjang S1 \natau S2 di bidang yang terkait dengan data science, \nanalisis data, teknologi informasi, atau ilmu komputer.\n2. Memiliki IPK minimal 3.5 pada skala 4.0.\n3. Menunjukkan minat dan prestasi di bidang data \nscience melalui proyek atau penelitian yang telah \ndilakukan.\n4. Tidak sedang menerima beasiswa lain yang \nmenanggung biaya kuliah penuh.\n\nPersyaratan Administrasi\n1. Mengisi formulir pendaftaran beasiswa yang \ntersedia secara online.\n2. Mengunggah transkrip nilai akademik terbaru.\n3. Menyertakan surat rekomendasi dari dua orang \ndosen atau pembimbing akademik.\nMenyertakan esai motivasi yang menjelaskan minat \ndan rencana karir di bidang data \nscience (maksimal 1000 kata).\n4. Menyertakan portofolio proyek atau hasil \npenelitian yang relevan (jika ada).',
-                            textAlign: TextAlign.justify,
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
-                                ),
+                        Flexible(
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                20.0, 10.0, 20.0, 50.0),
+                            child: Text(
+                              'Beasiswa Suka Data adalah program beasiswa yang \nditujukan untuk mahasiswa berprestasi di bidang \nanalisis data, ilmu data, dan teknologi informasi.\nProgram ini bertujuan untuk mendukung perkem-\nbangan sumber daya manusia yang kompeten di \nbidang data science, yang menjadi semakin penting \ndi era digital saat ini.\n\nTujuan Beasiswa\n1. Mendorong minat dan pengembangan keterampilan \ndi bidang ilmu data.\n2. Menyediakan bantuan finansial bagi \nmahasiswa berprestasi yang memiliki keterbatasan \nekonomi.\n3. Membangun jaringan profesional di bidang analisis \ndata melalui program mentorship dan pelatihan.\n\nManfaat Beasiswa\n1. Bantuan biaya kuliah penuh atau sebagian selama \n1 tahun akademik.\n2. Kesempatan mengikuti pelatihan dan workshop \neksklusif di bidang data science.\n3. Akses ke jaringan mentor profesional dan peluang \nmagang di perusahaan mitra.\n4. Sertifikat penghargaan dan kesempatan untuk \nmengikuti proyek penelitian atau pengembangan.\n\nSyarat dan Ketentuan\nPersyaratan Umum\n1. Warga Negara Indonesia.\n2. Terdaftar sebagai mahasiswa aktif di jenjang S1 \natau S2 di bidang yang terkait dengan data science, \nanalisis data, teknologi informasi, atau ilmu komputer.\n2. Memiliki IPK minimal 3.5 pada skala 4.0.\n3. Menunjukkan minat dan prestasi di bidang data \nscience melalui proyek atau penelitian yang telah \ndilakukan.\n4. Tidak sedang menerima beasiswa lain yang \nmenanggung biaya kuliah penuh.\n\nPersyaratan Administrasi\n1. Mengisi formulir pendaftaran beasiswa yang \ntersedia secara online.\n2. Mengunggah transkrip nilai akademik terbaru.\n3. Menyertakan surat rekomendasi dari dua orang \ndosen atau pembimbing akademik.\nMenyertakan esai motivasi yang menjelaskan minat \ndan rencana karir di bidang data \nscience (maksimal 1000 kata).\n4. Menyertakan portofolio proyek atau hasil \npenelitian yang relevan (jika ada).',
+                              textAlign: TextAlign.justify,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.black,
+                                    letterSpacing: 0.0,
+                                  ),
+                            ),
                           ),
                         ),
                       ],
@@ -114,8 +118,8 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
               Align(
                 alignment: const AlignmentDirectional(0.06, 1.04),
                 child: FFButtonWidget(
-                  onPressed: () {
-                    print('Button pressed ...');
+                  onPressed: () async {
+                    context.pushNamed('c_campaigns_Details2');
                   },
                   text: 'Lanjut daftar',
                   options: FFButtonOptions(

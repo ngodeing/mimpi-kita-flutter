@@ -50,7 +50,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xEEFFFFFF),
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Column(
@@ -210,6 +210,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5A6166),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -218,6 +219,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5A6166),
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -259,6 +261,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Poppins',
+                                    color: Colors.black,
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -283,6 +286,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5A6166),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -291,6 +295,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5A6166),
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -377,6 +382,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5A6166),
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -463,6 +469,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5A6166),
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -504,6 +511,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Poppins',
+                                    color: Colors.black,
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -520,8 +528,8 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('c_Login');
                     },
                     text: 'Daftar',
                     options: FFButtonOptions(
@@ -568,6 +576,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: Colors.black,
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -594,6 +603,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Poppins',
+                                    color: Colors.black,
                                     fontSize: 15.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,

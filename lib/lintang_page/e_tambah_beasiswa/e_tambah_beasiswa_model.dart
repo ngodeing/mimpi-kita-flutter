@@ -27,9 +27,6 @@ class ETambahBeasiswaModel extends FlutterFlowModel<ETambahBeasiswaWidget> {
   FocusNode? textFieldFocusNode5;
   TextEditingController? textController5;
   String? Function(BuildContext, String?)? textController5Validator;
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
-      FFUploadedFile(bytes: Uint8List.fromList([]));
 
   @override
   void initState(BuildContext context) {}

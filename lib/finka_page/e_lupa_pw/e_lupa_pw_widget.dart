@@ -41,7 +41,7 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xEEFFFFFF),
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Column(
@@ -263,8 +263,8 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
                         Align(
                           alignment: const AlignmentDirectional(0.02, 0.3),
                           child: FFButtonWidget(
-                            onPressed: () {
-                              print('Kirim pressed ...');
+                            onPressed: () async {
+                              context.pushNamed('c_Login');
                             },
                             text: 'Kirim',
                             options: FFButtonOptions(

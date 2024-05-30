@@ -38,7 +38,7 @@ class _BOnBoardingWidgetState extends State<BOnBoardingWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Align(
@@ -176,8 +176,8 @@ class _BOnBoardingWidgetState extends State<BOnBoardingWidget> {
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('c_Login');
                     },
                     text: 'Mulai Donasi',
                     options: FFButtonOptions(
