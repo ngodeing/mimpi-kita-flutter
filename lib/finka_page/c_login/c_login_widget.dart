@@ -155,7 +155,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                         alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              75.0, 32.0, 0.0, 0.0),
+                              60.0, 32.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
