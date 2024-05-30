@@ -82,7 +82,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Poppins',
                                           color: const Color(0xFF626262),
                                           letterSpacing: 0.0,
                                         ),
