@@ -43,14 +43,23 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEBC12),
           automaticallyImplyLeading: false,
-          leading: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-            size: 30.0,
+          leading: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.safePop();
+            },
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 30.0,
+            ),
           ),
           title: Align(
             alignment: const AlignmentDirectional(0.0, 0.0),
@@ -87,6 +96,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
+                          color: Colors.black,
                           fontSize: 24.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
@@ -127,6 +137,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                                   .labelMedium
                                   .override(
                                     fontFamily: 'Readex Pro',
+                                    color: Colors.black,
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: UnderlineInputBorder(
@@ -162,6 +173,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
+                                  color: Colors.black,
                                   letterSpacing: 0.0,
                                 ),
                             validator: _model.textControllerValidator
@@ -182,6 +194,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
+                            color: Colors.black,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -193,7 +206,7 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(20.0),
                     ),
                     child: Row(
@@ -224,10 +237,8 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                                 ),
                             buttonPosition: RadioButtonPosition.left,
                             direction: Axis.vertical,
-                            radioButtonColor:
-                                FlutterFlowTheme.of(context).primary,
-                            inactiveRadioButtonColor:
-                                FlutterFlowTheme.of(context).secondaryText,
+                            radioButtonColor: const Color(0xFFFEBC12),
+                            inactiveRadioButtonColor: Colors.black,
                             toggleable: false,
                             horizontalAlignment: WrapAlignment.start,
                             verticalAlignment: WrapCrossAlignment.start,
@@ -240,31 +251,35 @@ class _DonationNowWidgetState extends State<DonationNowWidget> {
                 Expanded(
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 1.0),
-                    child: FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: 'Bayar',
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFFEBC12),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('DonationSuccess');
+                        },
+                        text: 'Bayar',
+                        options: FFButtonOptions(
+                          width: double.infinity,
+                          height: 40.0,
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: const Color(0xFFFEBC12),
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.white,
+                                    letterSpacing: 0.0,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: const BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
                   ),

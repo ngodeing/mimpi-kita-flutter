@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'g_home_scholarship_widget.dart' show GHomeScholarshipWidget;
+import 'caridonasi_widget.dart' show CaridonasiWidget;
 import 'package:flutter/material.dart';
 
-class GHomeScholarshipModel extends FlutterFlowModel<GHomeScholarshipWidget> {
+class CaridonasiModel extends FlutterFlowModel<CaridonasiWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

@@ -41,7 +41,7 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xEEFFFFFF),
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Column(
@@ -172,6 +172,7 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
                                           .labelMedium
                                           .override(
                                             fontFamily: 'Poppins',
+                                            color: const Color(0xFF5B6063),
                                             fontSize: 15.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -181,6 +182,7 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
                                           .labelMedium
                                           .override(
                                             fontFamily: 'Poppins',
+                                            color: const Color(0xFF5B6063),
                                             fontSize: 15.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -263,8 +265,8 @@ class _ELupaPwWidgetState extends State<ELupaPwWidget> {
                         Align(
                           alignment: const AlignmentDirectional(0.02, 0.3),
                           child: FFButtonWidget(
-                            onPressed: () {
-                              print('Kirim pressed ...');
+                            onPressed: () async {
+                              context.pushNamed('c_Login');
                             },
                             text: 'Kirim',
                             options: FFButtonOptions(

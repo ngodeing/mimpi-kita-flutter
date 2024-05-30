@@ -123,7 +123,7 @@ class _NavBarPageState extends State<NavBarPage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_outlined,
+              Icons.home,
               size: 24.0,
             ),
             activeIcon: Icon(
@@ -135,11 +135,11 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_outlined,
+              Icons.monetization_on_outlined,
               size: 24.0,
             ),
             activeIcon: Icon(
-              Icons.home,
+              Icons.monetization_on_rounded,
               size: 24.0,
             ),
             label: 'Home',

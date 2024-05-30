@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'c_aaa_widget.dart' show CAaaWidget;
+import 'caridonasi_copy_widget.dart' show CaridonasiCopyWidget;
 import 'package:flutter/material.dart';
 
-class CAaaModel extends FlutterFlowModel<CAaaWidget> {
+class CaridonasiCopyModel extends FlutterFlowModel<CaridonasiCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

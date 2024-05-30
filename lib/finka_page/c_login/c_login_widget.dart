@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'c_login_model.dart';
 export 'c_login_model.dart';
 
@@ -22,11 +21,6 @@ class _CLoginWidgetState extends State<CLoginWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => CLoginModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      context.pushNamed('e_LupaPw');
-    });
 
     _model.emailLoginTextController ??= TextEditingController();
     _model.emailLoginFocusNode ??= FocusNode();
@@ -50,7 +44,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xEEFFFFFF),
+        backgroundColor: const Color(0xFFEEEEEE),
         body: SafeArea(
           top: true,
           child: Column(
@@ -161,7 +155,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                         alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              79.0, 32.0, 0.0, 0.0),
+                              75.0, 32.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
@@ -214,6 +208,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: const Color(0xFF5B6063),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -263,6 +258,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Poppins',
+                                    color: const Color(0xFFEEEEEE),
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -349,6 +345,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
+                                    color: const Color(0xFF5B6063),
                                     letterSpacing: 0.0,
                                   ),
                           keyboardType: TextInputType.visiblePassword,
@@ -390,8 +387,8 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('f_homeDonation');
                     },
                     text: 'Masuk ',
                     options: FFButtonOptions(
@@ -441,6 +438,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Poppins',
+                                  color: Colors.black,
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
@@ -467,6 +465,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Poppins',
+                                    color: Colors.black,
                                     fontSize: 15.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,

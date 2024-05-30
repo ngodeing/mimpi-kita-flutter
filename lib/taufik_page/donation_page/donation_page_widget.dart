@@ -39,14 +39,23 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: const Color(0xFFEEEEEE),
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEBC12),
           automaticallyImplyLeading: false,
-          leading: const Icon(
-            Icons.arrow_back,
-            color: Colors.black,
-            size: 30.0,
+          leading: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.safePop();
+            },
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 30.0,
+            ),
           ),
           title: Align(
             alignment: const AlignmentDirectional(0.0, 0.0),
@@ -97,6 +106,7 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                   textAlign: TextAlign.start,
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
+                        color: Colors.black,
                         fontSize: 24.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
@@ -175,7 +185,7 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                     width: double.infinity,
                     height: 100.0,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF1F4F8),
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(20.0),
                       border: Border.all(
                         color: const Color(0xFF818898),
@@ -201,9 +211,8 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                             child: Container(
                               width: 200.0,
                               height: 100.0,
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .primaryBackground,
+                              decoration: const BoxDecoration(
+                                color: Colors.white,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -220,6 +229,7 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color: Colors.black,
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
@@ -256,31 +266,35 @@ class _DonationPageWidgetState extends State<DonationPageWidget> {
                 Expanded(
                   child: Align(
                     alignment: const AlignmentDirectional(0.0, 1.0),
-                    child: FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: 'Donasi Sekarang',
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: const Color(0xFFFEBC12),
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 3.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('DonationNow');
+                        },
+                        text: 'Donasi Sekarang',
+                        options: FFButtonOptions(
+                          width: double.infinity,
+                          height: 40.0,
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: const Color(0xFFFEBC12),
+                          textStyle:
+                              FlutterFlowTheme.of(context).titleSmall.override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.white,
+                                    letterSpacing: 0.0,
+                                  ),
+                          elevation: 3.0,
+                          borderSide: const BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(8.0),
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
                   ),

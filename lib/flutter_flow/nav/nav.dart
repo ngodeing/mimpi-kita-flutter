@@ -113,11 +113,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const CCampaignsDetails2Widget(),
         ),
         FFRoute(
-          name: 'c_aaa',
-          path: '/cAaa',
-          builder: (context, params) => const CAaaWidget(),
-        ),
-        FFRoute(
           name: 'DonationNow',
           path: '/donationNow',
           builder: (context, params) => const DonationNowWidget(),
@@ -126,6 +121,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'DonationSuccess',
           path: '/donationSuccess',
           builder: (context, params) => const DonationSuccessWidget(),
+        ),
+        FFRoute(
+          name: 'caridonasi',
+          path: '/caridonasi',
+          builder: (context, params) => const CaridonasiWidget(),
+        ),
+        FFRoute(
+          name: 'd_tambah_donasi',
+          path: '/dTambahDonasi',
+          builder: (context, params) => const DTambahDonasiWidget(),
+        ),
+        FFRoute(
+          name: 'caribantu',
+          path: '/caribantu',
+          builder: (context, params) => const CaribantuWidget(),
+        ),
+        FFRoute(
+          name: 'e_tambah_beasiswa',
+          path: '/eTambahBeasiswa',
+          builder: (context, params) => const ETambahBeasiswaWidget(),
+        ),
+        FFRoute(
+          name: 'f_profile',
+          path: '/fProfile',
+          builder: (context, params) => const FProfileWidget(),
+        ),
+        FFRoute(
+          name: 'g_edit_profile',
+          path: '/gEditProfile',
+          builder: (context, params) => const GEditProfileWidget(),
+        ),
+        FFRoute(
+          name: 'caribeasiswa',
+          path: '/caribeasiswa',
+          builder: (context, params) => const CaribeasiswaWidget(),
+        ),
+        FFRoute(
+          name: 'caridonasiCopy',
+          path: '/caridonasiCopy',
+          builder: (context, params) => const CaridonasiCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

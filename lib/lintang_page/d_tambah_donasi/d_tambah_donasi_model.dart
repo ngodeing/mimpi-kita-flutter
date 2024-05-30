@@ -1,10 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
-import 'c_campaigns_details2_widget.dart' show CCampaignsDetails2Widget;
+import 'd_tambah_donasi_widget.dart' show DTambahDonasiWidget;
 import 'package:flutter/material.dart';
 
-class CCampaignsDetails2Model
-    extends FlutterFlowModel<CCampaignsDetails2Widget> {
+class DTambahDonasiModel extends FlutterFlowModel<DTambahDonasiWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -20,9 +18,7 @@ class CCampaignsDetails2Model
   FocusNode? textFieldFocusNode3;
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue;
-  FormFieldController<String>? dropDownValueController;
+  DateTime? datePicked;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode4;
   TextEditingController? textController4;

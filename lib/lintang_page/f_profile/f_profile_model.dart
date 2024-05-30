@@ -1,11 +1,14 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'g_home_scholarship_widget.dart' show GHomeScholarshipWidget;
+import 'f_profile_widget.dart' show FProfileWidget;
 import 'package:flutter/material.dart';
 
-class GHomeScholarshipModel extends FlutterFlowModel<GHomeScholarshipWidget> {
+class FProfileModel extends FlutterFlowModel<FProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
+  bool isDataUploading = false;
+  FFUploadedFile uploadedLocalFile =
+      FFUploadedFile(bytes: Uint8List.fromList([]));
 
   @override
   void initState(BuildContext context) {}
