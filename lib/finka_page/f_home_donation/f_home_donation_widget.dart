@@ -37,15 +37,17 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
           : FocusScope.of(context).unfocus(),
+          body: SingleChildScrollView;
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: const Color(0xFFFEBC12),
+        body: SingleChildScrollView;
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
-              child: Row(
+              child: Center(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -127,8 +129,7 @@ class _FHomeDonationWidgetState extends State<FHomeDonationWidget> {
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
               child: Container(
-                width: 390.0,
-                height: 750.0,
+                width: MediaQuery.of(context).size.width * 0.95,
                 decoration: const BoxDecoration(
                   color: Color(0xFFEEEEEE),
                   borderRadius: BorderRadius.only(
