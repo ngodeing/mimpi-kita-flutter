@@ -59,16 +59,40 @@ class _ETambahBeasiswaWidgetState extends State<ETambahBeasiswaWidget> {
           child: AppBar(
             backgroundColor: const Color(0xFFFEBC12),
             automaticallyImplyLeading: false,
+            leading: Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                const Icon(
+                  Icons.settings_outlined,
+                  color: Colors.transparent,
+                  size: 24.0,
+                ),
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    context.safePop();
+                  },
+                  child: const Icon(
+                    Icons.arrow_back,
+                    color: Colors.black,
+                    size: 24.0,
+                  ),
+                ),
+              ],
+            ),
             title: Align(
               alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 50.0, 10.0),
                 child: Text(
                   'Beasiswa',
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Outfit',
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 22.0,
                         letterSpacing: 0.0,
                       ),

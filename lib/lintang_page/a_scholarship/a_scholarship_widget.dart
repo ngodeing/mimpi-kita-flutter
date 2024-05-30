@@ -42,16 +42,36 @@ class _AScholarshipWidgetState extends State<AScholarshipWidget> {
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEC739),
           automaticallyImplyLeading: false,
-          title: Text(
-            'Beasiswa',
-            textAlign: TextAlign.center,
-            style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Outfit',
-                  color: Colors.black,
-                  fontSize: 22.0,
-                  letterSpacing: 0.0,
-                  fontWeight: FontWeight.w600,
-                ),
+          leading: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.safePop();
+            },
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 24.0,
+            ),
+          ),
+          title: Align(
+            alignment: const AlignmentDirectional(0.0, 0.0),
+            child: Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 40.0, 0.0),
+              child: Text(
+                'Beasiswa',
+                textAlign: TextAlign.center,
+                style: FlutterFlowTheme.of(context).headlineMedium.override(
+                      fontFamily: 'Outfit',
+                      color: Colors.black,
+                      fontSize: 22.0,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.w600,
+                    ),
+              ),
+            ),
           ),
           actions: const [],
           centerTitle: false,

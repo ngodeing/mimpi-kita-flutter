@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'b_campaigns_details1_model.dart';
@@ -24,6 +25,11 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => BCampaignsDetails1Model());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      context.safePop();
+    });
   }
 
   @override
@@ -45,17 +51,34 @@ class _BCampaignsDetails1WidgetState extends State<BCampaignsDetails1Widget> {
         appBar: AppBar(
           backgroundColor: const Color(0xFFFEBC12),
           automaticallyImplyLeading: false,
-          title: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(130.0, 0.0, 0.0, 0.0),
-            child: Text(
-              'Beasiswa',
-              style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily: 'Outfit',
-                    color: Colors.black,
-                    fontSize: 22.0,
-                    letterSpacing: 0.0,
-                    fontWeight: FontWeight.bold,
-                  ),
+          leading: InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              context.safePop();
+            },
+            child: const Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 24.0,
+            ),
+          ),
+          title: Align(
+            alignment: const AlignmentDirectional(0.0, 0.0),
+            child: Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+              child: Text(
+                'Beasiswa',
+                style: FlutterFlowTheme.of(context).headlineMedium.override(
+                      fontFamily: 'Outfit',
+                      color: Colors.black,
+                      fontSize: 22.0,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
             ),
           ),
           actions: const [],

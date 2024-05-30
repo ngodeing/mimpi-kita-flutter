@@ -57,12 +57,21 @@ class _CaridonasiCopyWidgetState extends State<CaridonasiCopyWidget> {
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/arrow-narrow-left.png',
-                          width: 20.0,
-                          fit: BoxFit.cover,
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.safePop();
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/arrow-narrow-left.png',
+                            width: 20.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
