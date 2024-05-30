@@ -76,7 +76,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Poppins',
                                       color: Colors.black,
                                       letterSpacing: 0.0,
                                     ),
@@ -206,7 +206,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                                       context)
                                                   .bodySmall
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Poppins',
                                                     color: const Color(0xFF5D5959),
                                                     fontSize: 13.0,
                                                     letterSpacing: 0.0,
@@ -321,7 +321,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Poppins',
                                                   color: const Color(0xFF5D5959),
                                                   fontSize: 13.0,
                                                   letterSpacing: 0.0,
@@ -446,7 +446,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Poppins',
                                                   color: const Color(0xFF5D5959),
                                                   fontSize: 13.0,
                                                   letterSpacing: 0.0,
@@ -557,7 +557,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Poppins',
                                                   color: const Color(0xFF5D5959),
                                                   fontSize: 13.0,
                                                   letterSpacing: 0.0,
@@ -633,7 +633,7 @@ class _GHomeScholarshipWidgetState extends State<GHomeScholarshipWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Readex Pro',
+                                  fontFamily: 'Poppins',
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),
