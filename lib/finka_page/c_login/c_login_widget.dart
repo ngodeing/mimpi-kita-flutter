@@ -81,7 +81,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                           alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 20.0, 0.0, 0.0),
+                                50.0, 50.0, 0.0, 0.0),
                             child: Text(
                               'Mimpi Kita',
                               style: FlutterFlowTheme.of(context)
@@ -89,7 +89,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                                   .override(
                                     fontFamily: 'Poppins',
                                     color: const Color(0xFFFEBC12),
-                                    fontSize: 16.0,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
