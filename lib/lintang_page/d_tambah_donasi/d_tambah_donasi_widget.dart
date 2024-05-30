@@ -113,9 +113,9 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Poppins',
                                     color: Colors.black,
-                                    fontSize: 25.0,
+                                    fontSize: 30.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -131,7 +131,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                           children: [
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 15.0),
+                                  0.0, 0.0, 0.0, 20.0),
                               child: Text(
                                 'Silahkan Download dan Unggah kembali Surat \nPernyataan kontrak dibawah ini',
                                 style: FlutterFlowTheme.of(context)
@@ -211,7 +211,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                           children: [
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 15.0, 0.0, 15.0),
+                                  0.0, 20.0, 0.0, 20.0),
                               child: Text(
                                 'Nama Lengkap Sesuai KTP',
                                 style: FlutterFlowTheme.of(context)
@@ -300,7 +300,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 15.0, 0.0, 15.0),
+                                20.0, 15.0, 0.0, 20.0),
                             child: Text(
                               'Judul Donasi',
                               style: FlutterFlowTheme.of(context)
@@ -393,7 +393,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                           children: [
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 15.0, 0.0, 15.0),
+                                  0.0, 15.0, 0.0, 20.0),
                               child: Text(
                                 'Deskripsi Donasi',
                                 style: FlutterFlowTheme.of(context)
@@ -485,7 +485,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 15.0, 0.0, 15.0),
+                                20.0, 15.0, 0.0, 20.0),
                             child: Text(
                               'Tenggat Donasi',
                               style: FlutterFlowTheme.of(context)
@@ -603,7 +603,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 15.0, 0.0, 15.0),
+                                20.0, 15.0, 0.0, 20.0),
                             child: Text(
                               'Target Donasi',
                               style: FlutterFlowTheme.of(context)
@@ -623,7 +623,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  8.0, 0.0, 8.0, 15.0),
+                                  8.0, 0.0, 8.0, 20.0),
                               child: TextFormField(
                                 controller: _model.textController4,
                                 focusNode: _model.textFieldFocusNode4,
@@ -693,7 +693,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                         children: [
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                20.0, 0.0, 0.0, 15.0),
+                                20.0, 0.0, 0.0, 20.0),
                             child: Text(
                               'Email Donatur',
                               style: FlutterFlowTheme.of(context)
@@ -786,7 +786,7 @@ class _DTambahDonasiWidgetState extends State<DTambahDonasiWidget> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
