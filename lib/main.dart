@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_socket_channel/web_socket_channel.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
@@ -124,11 +125,11 @@ class _NavBarPageState extends State<NavBarPage> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
-              size: 24.0,
+              size: 30.0,
             ),
             activeIcon: Icon(
               Icons.home,
-              size: 24.0,
+              size: 30.0,
             ),
             label: 'Home',
             tooltip: '',
@@ -136,11 +137,11 @@ class _NavBarPageState extends State<NavBarPage> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.monetization_on_outlined,
-              size: 24.0,
+              size: 30.0,
             ),
             activeIcon: Icon(
               Icons.monetization_on_rounded,
-              size: 24.0,
+              size: 30.0,
             ),
             label: 'Home',
             tooltip: '',
