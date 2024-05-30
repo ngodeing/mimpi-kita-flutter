@@ -87,7 +87,7 @@ class _CLoginWidgetState extends State<CLoginWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    fontFamily: 'Poppins',
                                     color: const Color(0xFFFEBC12),
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
