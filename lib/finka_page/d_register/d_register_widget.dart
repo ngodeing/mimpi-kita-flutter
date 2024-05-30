@@ -161,7 +161,7 @@ class _DRegisterWidgetState extends State<DRegisterWidget> {
                         alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              79.0, 32.0, 0.0, 0.0),
+                              70.0, 32.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
