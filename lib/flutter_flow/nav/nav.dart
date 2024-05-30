@@ -142,16 +142,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/eTambahBeasiswa',
           builder: (context, params) => const ETambahBeasiswaWidget(),
         ),
-        FFRoute(
-          name: 'f_profile',
-          path: '/fProfile',
-          builder: (context, params) => const FProfileWidget(),
-        ),
-        FFRoute(
-          name: 'g_edit_profile',
-          path: '/gEditProfile',
-          builder: (context, params) => const GEditProfileWidget(),
-        ),
+        
         FFRoute(
           name: 'caribeasiswa',
           path: '/caribeasiswa',
